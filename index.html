@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#00d9ff">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="FlexCityMods">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <title>FlexCityMods</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div>
+      <div class="brand">FlexCity<span>Mods</span></div>
+      <div class="sub">Sua biblioteca de mods</div>
+    </div>
+    <button id="installBtn" class="icon-btn" hidden>＋</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">FLEX CITY</p>
+        <h1>Encontre seus<br>mods favoritos.</h1>
+        <p class="hero-text">Pesquise, organize e salve mods em um só lugar.</p>
+      </div>
+      <div class="hero-icon">⚡</div>
+    </section>
+
+    <div class="search-wrap">
+      <span>⌕</span>
+      <input id="search" type="search" placeholder="Procurar mods..." autocomplete="off">
+    </div>
+
+    <div id="categories" class="categories"></div>
+
+    <div class="section-head">
+      <h2 id="sectionTitle">Mods em destaque</h2>
+      <span id="count"></span>
+    </div>
+
+    <div id="grid" class="grid"></div>
+  </main>
+
+  <nav class="bottom-nav">
+    <button class="nav active" data-page="home"><b>⌂</b><span>Início</span></button>
+    <button class="nav" data-page="favorites"><b>★</b><span>Favoritos</span></button>
+    <button class="nav" data-page="downloads"><b>↓</b><span>Downloads</span></button>
+    <button class="nav" data-page="profile"><b>●</b><span>Perfil</span></button>
+  </nav>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-card">
+      <button id="closeModal" class="close">×</button>
+      <div id="modalIcon" class="modal-icon"></div>
+      <h2 id="modalName"></h2>
+      <p id="modalMeta" class="muted"></p>
+      <p id="modalDescription"></p>
+      <button id="favoriteModal" class="primary"></button>
+      <button id="downloadModal" class="secondary">Adicionar à biblioteca</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

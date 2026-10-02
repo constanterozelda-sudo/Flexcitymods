@@ -1,0 +1,13 @@
+{
+  "name": "FlexCityMods",
+  "short_name": "FlexCityMods",
+  "description": "Biblioteca de mods do Flex City.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#07080b",
+  "theme_color": "#00d9ff",
+  "orientation": "portrait",
+  "icons": [
+    {"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}
+  ]
+}
